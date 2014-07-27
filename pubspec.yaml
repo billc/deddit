@@ -1,0 +1,5 @@
+name: deddit
+description: A sample command-line application
+dependencies:
+  http: any
+  json_object: any
