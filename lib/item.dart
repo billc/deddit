@@ -3,15 +3,15 @@ part of deddit;
 class Item {
   String title, url;
   int comments = 0;
-  
+
   Item(this.title, this.url, this.comments);
-  
+
   Item.fromJsonObject(JsonObject json) {
     title = json.title;
     url = json.url;
     comments = json.num_comments;
   }
-  
+
   String toString() {
     var literal = '';
 
@@ -24,8 +24,8 @@ class Item {
       default:
         literal = '($comments comments)';
     }
-    
-    
+
     return "$title $literal \n$url";
   }
 }
+
